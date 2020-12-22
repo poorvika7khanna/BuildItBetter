@@ -13,8 +13,8 @@ body{
 		.logo{
 		width:20%;
 		height:10%;
-		margin-left:100px;
-		margin-right:100px;
+		margin-left:50px;
+		margin-right:50px;
 	}
 .container{
 	position:relative;
@@ -23,7 +23,7 @@ body{
 }
 
 		.wrapper {
-    width: 100%;
+    max-width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -77,7 +77,7 @@ a:hover {
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: bold;
-    padding: 0.9rem;
+    padding: 0.4rem;
 }
 #nav-bar ul li a {
     text-decoration: none;
@@ -114,11 +114,7 @@ a:hover {
 	padding-top:650px;
 }
 
-@media (max-weight: 100px) {
-	.row{
-		font-size-adjust: auto;
-	}
-}
+
     #header {
         display: block;
         text-align: center;
@@ -158,6 +154,90 @@ a:hover {
 		  background:black;
 		  color: white;
 		}
+		.pic1{
+			max-width:100%;
+			display:block;
+			height:auto;
+			margin-bottom:50px;
+			margin-left:adjust;
+		}
+		.pic2{
+			max-width:100%;
+			display:block;
+			height:auto;
+			margin-bottom:50px;
+			margin-left:adjust;
+		}
+		.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	padding-top:0px;
+	padding:5px;
+}
+		.container{
+	position:relative;
+	width:800px;
+	height:600px;
+	display : flex;
+	flex-direction : row;
+	justify-content : space-around;
+	flex-flow : wrap;
+}
+.container .box{
+	position:relative;
+	width:calc(800px - 30px);
+	height:calc(600px - 30px);
+	background:white;
+	float:left;
+	margin:15px;
+	margin-left:230px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+	border:5px solid red;
+	display : flex;
+	flex-direction : row;
+	justify-content : space-around;
+	flex-flow : wrap;
+}
+.container .box2{
+	position:relative;
+	width:calc(800px - 30px);
+	height:calc(400px - 30px);
+	background:white;
+	float:left;
+	margin:15px;
+	margin-left:230px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+	border:5px solid red;
+	display : flex;
+	flex-direction : row;
+	justify-content : space-around;
+	flex-flow : wrap;
+}
+@media screen and (max-weight: 1200px) {
+	 .box {
+		 width:40%;
+		font-size-adjust: auto;
+	}
+	.box2 {
+		width:40%;
+	 font-size-adjust: auto;
+ }
+}
+@media screen and (max-weight: 600px) {
+	 .box {
+		 width:90%;
+		font-size-adjust: auto;
+	}
+	.box2 {
+		width:90%;
+	 font-size-adjust: auto;
+ }
+}
+</style>
 
-
-	</style>
